@@ -5,10 +5,16 @@
 
 
 
+	from netmiko import ConnectHandler
+	from netmiko.ssh_exception import NetMikoTimeoutException
+	from paramiko.ssh_exception import SSHException
+	from netmiko.ssh_exception import AuthenticationException
+	import datetime
+	import schedule
+	import time
 
 
-
-def BACKUP():
+    def BACKUP():
 
     TNOW = datetime.datetime.now().replace(microsecond=0)
     TNOW = TNOW.strftime("%d-%b-%Y")
