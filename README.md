@@ -1,4 +1,4 @@
-# Network Automation - It schedule to backup the configuration of routers every 10mins or hour and day.
+# Network Automation #
 
 
 
@@ -57,7 +57,7 @@
         SAVE_FILE.close
         print('Finished config backup')
 
-schedule.every(10).minutes.do(BACKUP)
-while True:
+	schedule.every(10).minutes.do(BACKUP)
+	while True:
 	schedule.run_pending()
 	time.sleep(1)
