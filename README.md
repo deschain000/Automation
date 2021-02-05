@@ -7,16 +7,6 @@
 
 
 
-# IMPORT THIS LIBRARY
-from netmiko import ConnectHandler
-from netmiko.ssh_exception import NetMikoTimeoutException
-from paramiko.ssh_exception import SSHException
-from netmiko.ssh_exception import AuthenticationException
-import datetime
-import schedule
-import time
-
-
 
 def BACKUP():
 
@@ -30,7 +20,7 @@ def BACKUP():
         print ('\n  ' + 'ROUTER' + " - "+ IP.strip() + ' \n' )
         RTR = {
         'ip':   IP,
-        'username': 'k0r3x',
+        'username': 'cisco',
         'password': 'cisco',
         'device_type': 'cisco_ios',
         }
